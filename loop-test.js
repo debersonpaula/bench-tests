@@ -12,30 +12,36 @@ console.log(`testing loop functions with ${list.length} iterations`);
 tool.testcase('for    ', () => {
     const length = list.length;
     let i;
+    const data = [];
     for (i = 0; i < length; i++) {
-        list[i] = 1;
+        data.push(list[i]);
     }
 });
 
 tool.testcase('for in ', () => {
+    const data = [];
     for (const i in list) {
-        list[i] = 0;
+        data.push(list[i]);
     }
 });
 
 tool.testcase('forEach', () => {
-    list.forEach(value => { value });
+    const data = [];
+    list.forEach(value => { data.push(value) });
 });
 
 tool.testcase('map    ', () => {
-    list.map(value => { return value });
+    const data = list.map(value => { return value });
 });
 
 tool.testcase('reduce ', () => {
-    list.reduce((total, value) => { return total + value });
+    const data = list.reduce((total, value) => {
+        total.push(value);
+        return total;
+    }, []);
 });
 
 tool.testcase('filter ', () => {
-    list.filter((value) => { return value });
+    const data = list.filter((value) => { return true });
 });
 
