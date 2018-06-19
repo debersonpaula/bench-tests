@@ -21,5 +21,5 @@ Simple test suite with basic performance tests.
 ## testing objects with 1000000 iterations
 - testcase: obj = {} -> 11 ms
 - testcase: obj = Object.create(null) -> 58 ms
-- testcase: obj["x"] = 0 -> 1 ms
-- testcase: Object.defineProperty(obj, "x", withValue(0)) -> 128 ms
+- testcase: obj["x"] = 0 -> 10 ms
+- testcase: Object.defineProperty(obj, "x", withValue(0)) -> 250 ms

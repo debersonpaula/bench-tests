@@ -20,16 +20,16 @@ tool.testcase('obj = Object.create(null)', () => {
 
 tool.testcase('obj["x"] = 0', () => {
     let i = 0;
-    const obj = {};
     for (; i < iterations; i++) {
+        const obj = {};
         obj["x"] = 0;
     }
 });
 
 tool.testcase('Object.defineProperty(obj, "x", withValue(0))', () => {
     let i = 0;
-    const obj = {};
     for (; i < iterations; i++) {
+        const obj = {};
         Object.defineProperty(obj, 'x', { value: 0 });
     }
 });
