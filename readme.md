@@ -4,6 +4,7 @@ Simple test suite with basic performance tests.
 
 ## testing loop functions with 1000000 iterations
 - testcase: for     -> 1 ms
+- testcase: for in  -> 218 ms
 - testcase: forEach -> 34 ms
 - testcase: map     -> 328 ms
 - testcase: reduce  -> 29 ms

@@ -17,6 +17,12 @@ tool.testcase('for    ', () => {
     }
 });
 
+tool.testcase('for in ', () => {
+    for (const i in list) {
+        list[i] = 0;
+    }
+});
+
 tool.testcase('forEach', () => {
     list.forEach(value => { value });
 });
