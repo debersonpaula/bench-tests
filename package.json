@@ -1,0 +1,15 @@
+{
+  "name": "bench-tests",
+  "version": "0.0.0",
+  "description": "Bench Test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "D.A.Paula",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.17.10",
+    "moment": "^2.22.1"
+  }
+}
