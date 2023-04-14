@@ -9,7 +9,7 @@
   "author": "D.A.Paula",
   "license": "MIT",
   "dependencies": {
-    "lodash": "^4.17.10",
-    "moment": "^2.22.1"
+    "lodash": "4.17.21",
+    "moment": "2.29.4"
   }
 }

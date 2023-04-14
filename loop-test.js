@@ -1,6 +1,6 @@
 const tool = require('./tool');
 
-const iterations = 1000000;
+const iterations = 5000000;
 
 const list = [];
 for (var i = 0; i < iterations; i++) {
